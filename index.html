@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Animated Banner</title>
   <style>
-    /* Убираем отступы и делаем фон прозрачным */
-    body, html {
+    body {
       margin: 0;
-      padding: 0;
-      background: transparent;
+      background-color: black;
       overflow: hidden;
     }
-    /* Видео займет всю область */
+
     video {
       width: 100vw;
       height: 100vh;
-      object-fit: contain; /* или cover, если нужно заполнить экран */
+      object-fit: contain;
     }
   </style>
 </head>
 <body>
-  <video autoplay loop muted playsinline>
-    <!-- Путь к вашему .webm файлу -->
-    <source src="banner.webm" type="video/webm">
-    Ваш браузер не поддерживает HTML5 видео.
+  <video autoplay muted loop playsinline>
+    <source src="banner.webm" type="video/webm" />
+    Your browser does not support the video tag.
   </video>
 </body>
 </html>
